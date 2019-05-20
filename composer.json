@@ -1,7 +1,7 @@
 {
-    "name": "miladnouri/webhook",
+    "name": "miladnouri/laravel-notification-webhook",
     "description": "Webhook Notifications driver",
-    "homepage": "https://github.com/miladnouri/webhook",
+    "homepage": "https://github.com/miladnouri/laravel-notification-webhook",
     "license": "MIT",
     "authors": [
         {
