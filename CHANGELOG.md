@@ -2,6 +2,6 @@
 
 All notable changes to `webhook` will be documented in this file
 
-## 1.0.0 - 201X-XX-XX
+## 1.3.0
 
-- initial release
+- Add support for Laravel 5.7 & 5.8

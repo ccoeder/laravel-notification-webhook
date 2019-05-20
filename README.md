@@ -1,15 +1,19 @@
-# Webhook notifications channel for Laravel 5.3
+# Webhook notifications channel for Laravel 5.3 ~ 5.8
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/laravel-notification-channels/webhook.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/webhook)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/miladnouri/webhook.svg?style=flat-square)](https://packagist.org/packages/miladnouri/webhook)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/laravel-notification-channels/webhook/master.svg?style=flat-square)](https://travis-ci.org/laravel-notification-channels/webhook)
+[![Build Status](https://img.shields.io/travis/miladnouri/webhook/master.svg?style=flat-square)](https://travis-ci.org/miladnouri/webhook)
 [![StyleCI](https://styleci.io/repos/65685866/shield)](https://styleci.io/repos/65685866)
 [![SensioLabsInsight](https://img.shields.io/sensiolabs/i/9015691f-130d-4fca-8710-72a010abc684.svg?style=flat-square)](https://insight.sensiolabs.com/projects/9015691f-130d-4fca-8710-72a010abc684)
-[![Quality Score](https://img.shields.io/scrutinizer/g/laravel-notification-channels/webhook.svg?style=flat-square)](https://scrutinizer-ci.com/g/laravel-notification-channels/webhook)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/laravel-notification-channels/webhook/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/laravel-notification-channels/webhook/?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel-notification-channels/webhook.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/webhook)
+[![Quality Score](https://img.shields.io/scrutinizer/g/miladnouri/webhook.svg?style=flat-square)](https://scrutinizer-ci.com/g/miladnouri/webhook)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/miladnouri/webhook/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/miladnouri/webhook/?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/miladnouri/webhook.svg?style=flat-square)](https://packagist.org/packages/miladnouri/webhook)
 
-This package makes it easy to send webhooks using the Laravel 5.3 notification system.
+This package makes it easy to send webhooks using the Laravel notification system.
+
+This is a fork from laravel-notification-channels/webhook. because they didn't update the package, I added Laravel 5.7 and 5.8 support.
+
+
 
 ## Contents
 
@@ -18,9 +22,6 @@ This package makes it easy to send webhooks using the Laravel 5.3 notification s
 	- [Available Message methods](#available-message-methods)
 - [Changelog](#changelog)
 - [Testing](#testing)
-- [Security](#security)
-- [Contributing](#contributing)
-- [Credits](#credits)
 - [License](#license)
 
 
@@ -29,7 +30,7 @@ This package makes it easy to send webhooks using the Laravel 5.3 notification s
 You can install the package via composer:
 
 ``` bash
-composer require laravel-notification-channels/webhook
+composer require miladnouri/webhook
 ```
 
 ## Usage
@@ -69,7 +70,7 @@ This method needs to return the URL where the notification Webhook will receive 
 ```php
 public function routeNotificationForWebhook()
 {
-    return 'http://requestb.in/1234x';
+    return 'http://myrequest.com/abcd';
 }
 ```
 
@@ -89,19 +90,6 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 ``` bash
 $ composer test
 ```
-
-## Security
-
-If you discover any security related issues, please email m.pociot@gmail.com instead of using the issue tracker.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Credits
-
-- [Marcel Pociot](https://github.com/mpociot)
-- [All Contributors](../../contributors)
 
 ## License
 
