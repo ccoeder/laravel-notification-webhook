@@ -34,7 +34,6 @@ composer require ccoeder/laravel-notification-webhook
 Now you can use the channel in your `via()` method inside the notification:
 
 ```php
-use NotificationChannels\Webhook\WebhookChannel;
 use NotificationChannels\Webhook\WebhookMessage;
 use Illuminate\Notifications\Notification;
 
@@ -42,7 +41,7 @@ class ProjectCreated extends Notification
 {
     public function via($notifiable)
     {
-        return [WebhookChannel::class];
+        return ['webhook'];
     }
 
     public function toWebhook($notifiable)
