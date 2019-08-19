@@ -11,7 +11,7 @@
 
 This package makes it easy to send webhooks using the Laravel notification system.
 
-This is an another fork from ccoeder/webhook because I need to use with on-demand notifications so I added support for that.
+This is an another fork from miladnouri/laravel-notification-webhook because I need to use with on-demand notifications so I added support for that.
 
 ## Contents
 
