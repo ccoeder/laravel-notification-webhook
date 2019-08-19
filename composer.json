@@ -1,13 +1,12 @@
 {
-    "name": "miladnouri/laravel-notification-webhook",
+    "name": "ccoeder/laravel-notification-webhook",
     "description": "Webhook Notifications driver",
-    "homepage": "https://github.com/miladnouri/laravel-notification-webhook",
+    "homepage": "https://github.com/ccoeder/laravel-notification-webhook",
     "license": "MIT",
     "authors": [
         {
-            "name": "Milad Nouri",
-            "email": "milad.nu@gmail.com",
-            "homepage": "https://tookan.tech"
+            "name": "H. can Yildirim",
+            "email": "huseyincanyildirim@outlook.com.tr"
         }
     ],
     "require": {

@@ -11,25 +11,21 @@
 
 This package makes it easy to send webhooks using the Laravel notification system.
 
-This is a fork from laravel-notification-channels/webhook. because they didn't update the package, I added Laravel 5.7 and 5.8 support.
-
-
+This is an another fork from miladnouri/webhook because I need to use with on-demand notifications so I added support for that.
 
 ## Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-	- [Available Message methods](#available-message-methods)
-- [Changelog](#changelog)
-- [Testing](#testing)
-- [License](#license)
-
+-   [Installation](#installation)
+-   [Usage](#usage) - [Available Message methods](#available-message-methods)
+-   [Changelog](#changelog)
+-   [Testing](#testing)
+-   [License](#license)
 
 ## Installation
 
 You can install the package via composer:
 
-``` bash
+```bash
 composer require miladnouri/laravel-notification-webhook
 ```
 
@@ -37,7 +33,7 @@ composer require miladnouri/laravel-notification-webhook
 
 Now you can use the channel in your `via()` method inside the notification:
 
-``` php
+```php
 use NotificationChannels\Webhook\WebhookChannel;
 use NotificationChannels\Webhook\WebhookMessage;
 use Illuminate\Notifications\Notification;
@@ -76,10 +72,9 @@ public function routeNotificationForWebhook()
 
 ### Available methods
 
-- `data('')`: Accepts a JSON-encodable value for the Webhook body.
-- `userAgent('')`: Accepts a string value for the Webhook user agent.
-- `header($name, $value)`: Sets additional headers to send with the POST Webhook.
-
+-   `data('')`: Accepts a JSON-encodable value for the Webhook body.
+-   `userAgent('')`: Accepts a string value for the Webhook user agent.
+-   `header($name, $value)`: Sets additional headers to send with the POST Webhook.
 
 ## Changelog
 
@@ -87,7 +82,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 
 ## Testing
 
-``` bash
+```bash
 $ composer test
 ```
 
