@@ -26,7 +26,7 @@ This is an another fork from miladnouri/webhook because I need to use with on-de
 You can install the package via composer:
 
 ```bash
-composer require miladnouri/laravel-notification-webhook
+composer require ccoeder/laravel-notification-webhook
 ```
 
 ## Usage
